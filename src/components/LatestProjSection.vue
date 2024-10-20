@@ -26,7 +26,8 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5">
                                 </path>
-                            </svg></a><a
+                            </svg></a>
+                            <!-- <a
                             class="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
                             :href="project.gitURL"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
@@ -37,7 +38,7 @@
                                 </path>
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
-                            </svg></a>
+                            </svg></a> -->
                     </div>
                 </div>
                 <div class="text-white rounded-b-xl mt-3 bg-[#111a3e] shadow-lg border border-[#1f1641] py-6 px-4">
@@ -58,12 +59,24 @@
 </template>
 <script setup>
 import { ref, computed } from 'vue';
+import sadhannepal from '@/assets/sadhannepal.JPG';
+import bindukumarthapa from '@/assets/bindukumarthapa.JPG';
+import kaamkaaz from '@/assets/kaamkaaz.JPG';
+import tboutiquewear from '@/assets/tboutiquewear.JPG';
+
+
+
+
+
+// assets/kaamkaaz.JPG
+
+
 
 const Projects = ref([
     {
         id: 1,
         category: 'Web Application',
-        image: 'src/assets/sadhannepal.JPG',
+        image: sadhannepal,
         title: 'Sadhannepal',
         description: 'E-commerce project targetting in local business sell two wheelers and four wheelers ',
         technologies: ['nuxtjs','vue.js', 'vuex', 'laravel'],
@@ -94,7 +107,7 @@ const Projects = ref([
     {
         id: 5,
         category: 'Web Application',
-        image: 'src/assets/bindukumarthapa.JPG',
+        image: bindukumarthapa,
         title: 'Portfolio site',
         description: 'bindukumarthapa.com  is portfolio site of Bindukumar Thapa renouned politician of nepal member of nepali congress',
         technologies: ['html ', 'css', 'laravel'],
@@ -104,7 +117,7 @@ const Projects = ref([
     {
         id: 6,
         category: 'Web Application',
-        image: 'src/assets/kaamkaaz.JPG',
+        image: kaamkaaz,
         title: 'Job portable site',
         description: 'kaamkaaz.com.np is job portal site ',
         technologies: ['vue.js 3', 'vuex', 'Express'],
@@ -114,7 +127,7 @@ const Projects = ref([
     {
         id: 4,
         category: 'Web Application',
-        image: 'src/assets/tboutiquewear.JPG',
+        image: tboutiquewear,
         title: 'E-commerce',
         description: 'e-commerce platform for clothing store',
         technologies: ['Wordpress'],
